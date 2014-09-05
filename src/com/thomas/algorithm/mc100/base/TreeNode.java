@@ -3,8 +3,8 @@ package com.thomas.algorithm.mc100.base;
 public class TreeNode {
 	
 	public int value;
-	public TreeNode next;
-	public TreeNode prev;
+	public TreeNode left;
+	public TreeNode right;
 
 	public int getValue() {
 		return value;
@@ -14,20 +14,22 @@ public class TreeNode {
 		this.value = value;
 	}
 
-	public TreeNode getNext() {
-		return next;
+	public TreeNode getLeft() {
+		return left;
 	}
 
-	public void setNext(TreeNode next) {
-		this.next = next;
+	public void setLeft(TreeNode left) {
+		this.left = left;
 	}
 
-	public TreeNode getPrev() {
-		return prev;
+	public TreeNode getRight() {
+		return right;
 	}
 
-	public void setPrev(TreeNode prev) {
-		this.prev = prev;
+	public void setRight(TreeNode right) {
+		this.right = right;
 	}
+
+	
 
 }

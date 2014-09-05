@@ -5,7 +5,7 @@ import java.util.LinkedList;
 /**
  * 插入排序——将下一个插入已排好的序列中 
  * 
- * 入排序算法类似于玩扑克时抓牌的过程，玩家每拿到一张牌都要插入到手中已有的牌里，使之从小到大排好序。
+ * 插入排序算法类似于玩扑克时抓牌的过程，玩家每拿到一张牌都要插入到手中已有的牌里，使之从小到大排好序。
  * @author thomas
  * @date 2013-5-20
  */
@@ -63,7 +63,6 @@ public class InsertSort {
 					}else{
 						result.add(li-1, array[i]);
 					}
-					
 			}
 		}
 		print(result);
