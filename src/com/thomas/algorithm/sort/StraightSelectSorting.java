@@ -31,6 +31,7 @@ public class StraightSelectSorting {
 			}
 		}
 	}
+	
 	public static void main(String[] args) {
 		int[] array = {5,4,89,4,7,4,2};
 		print(array);

@@ -32,16 +32,19 @@ public class InsertSort {
 		return input;
 	}
 	
-	public static void rankTest(int[] a){
-		if(a==null||a.length==0)
-			return;
-		for(int i=1;i<a.length;i++){
-			for(int j=i;j>0;j--){
-				if(a[j]>a[j-1])
+	//09.05
+	public static int[] test2(int[] input){
+		for(int i=0;i<input.length-1;i++){
+			for(int j=i+1 ;j>=1; j--){
+				if(input[j]<input[j-1]){
+					swap(input,j,j-1);
+				}else{
 					break;
-				swap(a,j,j-1);
+				}
+					
 			}
 		}
+		return input;
 	}
 	
 	public static void swap(int[] input,int from,int to){
@@ -50,28 +53,11 @@ public class InsertSort {
 		input[to]=tem;
 	}
 	
-	//从小到大排列
-	public static void run(int[] array){
-		//建立一个数组来存放排序好的数组
-		LinkedList<Integer> result =new LinkedList<Integer>();
-		result.add(array[0]);
-		for(int i = 1;i<array.length;i++){
-			for(int li=0;li<result.size();li++){
-				if(array[i]<=result.get(li))
-					if(li==0){
-						result.addFirst(array[i]);
-					}else{
-						result.add(li-1, array[i]);
-					}
-			}
-		}
-		print(result);
-	}
 	
 	public static void main(String[] args){
 		int[] a = {55,324,67,3,98,3,5,48,58,3,55,6,4,77};
 		//run(a);
-		sort(a);
+		test2(a);
 		for(int i =0;i<a.length;i++){
 			System.out.print(a[i]+",");
 		}
