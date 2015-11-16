@@ -21,6 +21,12 @@
 13.int数组判断是否有重复
 http://blog.csdn.net/yahohi/article/details/7900955
 14.当题目有多个条件限制是，先找出所有条件里能过滤掉最多内容的条件，优先使用这些条件！！！（219）
+15.java中char的前256和ascII码相同，char是两个字节是unicode字符集作为编码能够保存中文。（205）
+16.0-9的数字(不是ascII码)转char通过方法(char)('0'+9) ，char转int的0-9通过Character.getNumberValue('9')(67)
+17.二进制(src1]="111",src2="101")的加法中每个位都转换为int值然后异或，
+   每个位中的进位是通过两个相加的相关位和上一位的进位相加如果大于2就为有进位（67）
+
+
 常犯错误
 1.多链表操作时不要忘记移动当前节点。（21）
 2.考虑结束的收尾工作 （21）
@@ -40,6 +46,9 @@ Floyd判圈算法
 1.BM算法
 http://segmentfault.com/a/1190000002619088
 2. Arrays.sort
+3.字符串中子串查找，Boyer-Moore KMP
+http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
+4.素数的问题，一个是是否是素数（204）
 
 --------
 参考：
